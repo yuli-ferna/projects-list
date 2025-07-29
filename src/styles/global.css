@@ -1,6 +1,19 @@
+
+@font-face {
+  
+  font-family: "3DIsometric"; /* Choose a name for your font family */
+  src: local("3DIsometric"), url('/src/assets/fonts/3DIsometric-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Optional: improves font loading performance */
+}
 @import "tailwindcss";
+@theme {
+  --font-3d: "3DIsometric";
+}
 html {
   font-family: "VT323", monospace;
+  color: #21242a;
   font-weight: 400;
   font-style: normal;
   --s: 140px; /* control the size*/
@@ -18,6 +31,15 @@ html {
   
   background: url("../../public/background.svg"),#f2b8c3;
   background-size: cover;
+}
+.retro-shadow {
+  box-shadow: 4px 4px 0px 0 #21242a;
+}
+.retro-button {
+  @apply flex justify-center items-center flex-grow-0 flex-shrink-0 h-[45px] relative gap-2.5 px-3 py-1.5 rounded-[20px] bg-[#fbc7e2] border-2 border-[#21242a]
+}
+.title-1 {
+  text-shadow: 1px 1px rgba(33, 36, 42, 0.7), -1px -1px rgba(33, 36, 42, 0.7);
 }
 /* body {
   background: #A4BDF5;
