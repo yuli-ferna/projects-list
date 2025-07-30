@@ -1,48 +1,48 @@
+import Button from 'components/Button/Button';
 import Tag from 'components/Tag/Tag';
-import React from 'react'
-interface link {
-  name: string;
-  text: string;
-  href: string;
-}
+import { project, themes } from 'utils';
 interface Props {
-  title: string;
-  description: string;
-  img: string;
-  tags: string[];
-  link?: string;
-  github?: string;
-  figma?: string;
+  project: project;
+  index: number;
+  colorNumber?: string;
+  colorButton?: string;
 }
 
-const ProjectContent = (props: Props) => {
+const ProjectContent = ({ project, index, colorNumber = "#FEF7C3", colorButton = "#FBC7E2" }: Props) => {
+  const { title, description, image, tags = [], figma, github, link } = project;
+  
   return (<>
-    <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 w-auto relative gap-[34px] px-2 py-2.5">
-      <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[75px] h-[75px] relative gap-2.5 bg-[#fef7c3] border border-black">
-        <p className="flex-grow-0 flex-shrink-0 text-[50px] font-3d text-left text-black">01</p>
+    <div className="flex justify-start items-center w-full relative gap-[34px] py-2.5">
+      <div
+        className={`flex justify-center items-center flex-grow-0 flex-shrink-0 w-[75px] h-[75px] relative gap-2.5 border border-[#474164]`}
+        style={{ backgroundColor: colorNumber }}
+      >
+        <p className="text-[50px] font-3d text-left">{`${index < 9 && "0"}${index + 1}`}</p>
       </div>
-      <p className="flex-grow-0 flex-shrink-0 w-min whitespace-break-spaces wrap-break-word h-fit text-[41px] text-left text-black ">
-        {props.title}
+      <p className="w-fit whitespace-break-spaces wrap-break-word h-fit text-[41px] text-left">
+        {title}
       </p>
     </div>
-    <p className="w-full text-xl text-left text-black">
-      {props.description}
+    <p className="w-full text-xl text-left">
+      {description}
     </p>
-    <img
-      src={props.img}
-      className="flex-grow-0 flex-shrink-0 w-full h-[255px] object-cover border-4 border-black"
-      style={{ boxShadow: "4px 4px 0px 0 #000" }}
-    />
+    <div className='w-full relative'>
+      <svg className='absolute -top-2 -left-3' width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M49.5 38V43H52V45.5H57V49.5H52V52H49.5V57H45.5V52H43V49.5H38V45.5H43V43H45.5V38H49.5ZM24.5 10.5V15.5H27V20.5H29.5V23H32V25.5H37V28H42V32H37V34.5H32V37H29.5V39.5H27V44.5H24.5V49.5H20.5V44.5H18V39.5H15.5V37H13V34.5H8V32H3V28H8V25.5H13V23H15.5V20.5H18V15.5H20.5V10.5H24.5ZM49.5 3V8H52V10.5H57V14.5H52V17H49.5V22H45.5V17H43V14.5H38V10.5H43V8H45.5V3H49.5Z" fill="#FA8FC5" stroke="black" />
+      </svg>
+      <img
+        src={image}
+        className="w-full h-[255px] object-cover border-2 object-top border-[#474164]"
+        style={{ boxShadow: "4px 4px 0px 0 #474164" }}
+      />
+    </div>
     <div className="flex flex-wrap justify-start items-center flex-grow-0 flex-shrink-0 w-full gap-[15px] mb-5">
-     {props.tags.map((tag, index) => {
-        return <Tag key={`${props.title}-${tag}`} tag={tag} />
-     })}
+      {tags.map((tag, index) => {
+        return <Tag key={`${title}-${tag}-${index}`} tag={tag} />
+      })}
     </div>
     <div className="flex flex-wrap justify-end items-center flex-grow-0 flex-shrink-0 w-full gap-[18px]">
-      {!!props.figma && <a
-        className="retro-button"
-        style={{ boxShadow: "5px 4px 0px 0 #21242a" }}
-      >
+      {!!figma && <Button href={figma} color={colorButton}>
         <svg
           width={29}
           height={29}
@@ -52,7 +52,7 @@ const ProjectContent = (props: Props) => {
           className="flex-grow-0 flex-shrink-0 w-7 h-7 relative"
           preserveAspectRatio="xMidYMid meet"
         >
-          <g clip-path="url(#clip0_92_287)">
+          <g clipPath="url(#clip0_92_287)">
             <path
               d="M9.93029 28.4584C12.4526 28.4584 14.4997 26.4112 14.4997 23.8889V19.3195H9.93029C7.40796 19.3195 5.36084 21.3666 5.36084 23.8889C5.36084 26.4112 7.40796 28.4584 9.93029 28.4584Z"
               fill="#0ACF83"
@@ -81,11 +81,8 @@ const ProjectContent = (props: Props) => {
           </defs>
         </svg>
         <p className="flex-grow-0 flex-shrink-0 text-[22px] text-left text-[#21242a]">Figma</p>
-      </a>}
-      {!!props.github && <a
-        className="retro-button"
-        style={{ boxShadow: "5px 4px 0px 0 #21242a" }}
-      >
+      </Button>}
+      {!!github && <Button href={github} color={colorButton}>
         <svg
           width={32}
           height={31}
@@ -101,11 +98,8 @@ const ProjectContent = (props: Props) => {
           />
         </svg>
         <p className="flex-grow-0 flex-shrink-0 text-[22px] text-left text-[#21242a]">Github</p>
-      </a>}
-      {!!props.link && <a
-        className="retro-button"
-        style={{ boxShadow: "5px 4px 0px 0 #21242a" }}
-      >
+      </Button>}
+      {!!link && <Button href={link} color={colorButton}>
         <svg
           width={25}
           height={25}
@@ -116,14 +110,14 @@ const ProjectContent = (props: Props) => {
           preserveAspectRatio="none"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M23.5 1.75H15.5L14.5 2.75001L17.6161 5.86612L9.61612 13.8661L11.3839 15.6339L19.3839 7.63388L22.5 10.75L23.5 9.75V1.75ZM1.25 4.5H11V7H3.75V21.5H18.25V14.25H20.75V24H1.25V4.5Z"
             fill="#21242A"
           />
         </svg>
         <p className="flex-grow-0 flex-shrink-0 text-[22px] text-left text-[#21242a]">See here</p>
-      </a>}
+      </Button>}
     </div>
   </>
   )

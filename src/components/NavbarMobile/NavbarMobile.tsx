@@ -14,7 +14,7 @@ const NavbarMobile = (props: Props) => {
         className="flex-grow-0 flex-shrink-0 w-[54px] h-[54px] relative"
         preserveAspectRatio="xMidYMid meet"
       >
-        <g clip-path="url(#clip0_77_279)">
+        <g clipPath="url(#clip0_77_279)">
           <path d="M51.418 5.14685H53.9998V48.8531H51.418V5.14685Z" fill="black" />
           <path d="M48.853 48.8531H51.418V51.435H48.853V48.8531Z" fill="black" />
           <path d="M48.853 2.565H51.418V5.14688H48.853V2.565Z" fill="black" />
@@ -35,9 +35,9 @@ const NavbarMobile = (props: Props) => {
           <path d="M0 5.14685H2.565V48.8531H0V5.14685Z" fill="black" />
         </g>
         <defs>
-          <clippath id="clip0_77_279">
+          <clipPath id="clip0_77_279">
             <rect width={54} height={54} fill="white" />
-          </clippath>
+          </clipPath>
         </defs>
       </svg>
       <svg
@@ -49,7 +49,7 @@ const NavbarMobile = (props: Props) => {
         className="flex-grow-0 flex-shrink-0 w-[54px] h-[54px] relative"
         preserveAspectRatio="xMidYMid meet"
       >
-        <g clip-path="url(#clip0_77_280)">
+        <g clipPath="url(#clip0_77_280)">
           <path d="M51.418 5.14685H53.9998V48.8531H51.418V5.14685Z" fill="black" />
           <path d="M48.853 48.8531H51.418V51.435H48.853V48.8531Z" fill="black" />
           <path d="M48.853 2.565H51.418V5.14688H48.853V2.565Z" fill="black" />
@@ -68,9 +68,9 @@ const NavbarMobile = (props: Props) => {
           />
         </g>
         <defs>
-          <clippath id="clip0_77_280">
+          <clipPath id="clip0_77_280">
             <rect width={54} height={54} fill="white" />
-          </clippath>
+          </clipPath>
         </defs>
       </svg>
       <svg
@@ -82,7 +82,7 @@ const NavbarMobile = (props: Props) => {
         className="flex-grow-0 flex-shrink-0 w-[54px] h-[54px] relative"
         preserveAspectRatio="xMidYMid meet"
       >
-        <g clip-path="url(#clip0_77_281)">
+        <g clipPath="url(#clip0_77_281)">
           <path
             d="M51.435 20.5706V18.0056H48.8531V15.4238H46.2881V10.2938H43.7231V30.8644H46.2881V28.2825H48.8531V25.7175H51.435V48.8531H54V20.5706H51.435Z"
             fill="black"
@@ -122,9 +122,9 @@ const NavbarMobile = (props: Props) => {
           />
         </g>
         <defs>
-          <clippath id="clip0_77_281">
+          <clipPath id="clip0_77_281">
             <rect width={54} height={54} fill="white" />
-          </clippath>
+          </clipPath>
         </defs>
       </svg>
     </div>

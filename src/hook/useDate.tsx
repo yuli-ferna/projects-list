@@ -21,7 +21,7 @@ export const useDate = () => {
   const wish = `Good ${(hour < 12 && 'Morning') || (hour < 17 && 'Afternoon') || 'Evening'}, `;
 
   const time = today.toLocaleTimeString(locale, { hour: 'numeric', hour12: true, minute: 'numeric' }).split(" ");
-  console.log(hour, time)
+
   return {
     date,
     time,

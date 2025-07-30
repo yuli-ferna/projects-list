@@ -37,7 +37,7 @@ const github = <svg
   className="flex-grow-0 flex-shrink-0 w-[54px] h-[54px] relative"
   preserveAspectRatio="xMidYMid meet"
 >
-  <g clip-path="url(#clip0_41_53)">
+  <g clipPath="url(#clip0_41_53)">
     <path d="M51.4181 5.14685H54V48.8531H51.4181V5.14685Z" fill="#21242A"></path>
     <path d="M48.8531 48.8531H51.4181V51.435H48.8531V48.8531Z" fill="#21242A"></path>
     <path d="M48.8531 2.56494H51.4181V5.14682H48.8531V2.56494Z" fill="#21242A"></path>
@@ -69,7 +69,7 @@ const linkedin = <svg
   className="flex-grow-0 flex-shrink-0 w-[54px] h-[54px] relative"
   preserveAspectRatio="xMidYMid meet"
 >
-  <g clip-path="url(#clip0_41_36)">
+  <g clipPath="url(#clip0_41_36)">
     <path d="M51.4182 5.14685H54V48.8531H51.4182V5.14685Z" fill="#21242A"></path>
     <path d="M48.8531 48.8531H51.4182V51.435H48.8531V48.8531Z" fill="#21242A"></path>
     <path d="M48.8531 2.56494H51.4182V5.14682H48.8531V2.56494Z" fill="#21242A"></path>
@@ -103,7 +103,7 @@ const gmail = <svg
   className="flex-grow-0 flex-shrink-0 w-12 h-12 relative"
   preserveAspectRatio="xMidYMid meet"
 >
-  <g clip-path="url(#clip0_41_68)">
+  <g clipPath="url(#clip0_41_68)">
     <path
       d="M45.72 18.285V16.005H43.425V13.71H41.145V9.15002H38.865V27.435H41.145V25.14H43.425V22.86H45.72V43.425H48V18.285H45.72Z"
       fill="#21242A"
@@ -169,7 +169,7 @@ const UnderConstruction = () => {
       className="flex-grow-0 flex-shrink-0 w-[200px] h-[200px] relative"
       preserveAspectRatio="xMidYMid meet"
     >
-      <g clip-path="url(#clip0_40_9)">
+      <g clipPath="url(#clip0_40_9)">
         <path
           d="M66.6874 114.25V161.875H95.2499V200H104.75V161.875H161.937V200H171.437V161.875H200V114.25H66.6874ZM104.75 142.875H95.2499V152.375H76.1874V142.875H85.7499V133.313H95.2499V123.813H114.312V133.313H104.75V142.875ZM142.875 142.875H133.312V152.375H114.312V142.875H123.812V133.313H133.312V123.813H152.375V133.313H142.875V142.875ZM190.5 133.313H180.937V142.875H171.437V152.375H152.375V142.875H161.937V133.313H171.437V123.813H190.5V133.313Z"
           fill="#21242A"

@@ -1,5 +1,4 @@
 import { useDate } from 'hook/useDate';
-import React from 'react'
 
 interface Props {
 
@@ -9,11 +8,11 @@ const Title = (props: Props) => {
   const { time } = useDate();
 
   return (
-    <div className="w-auto h-fit flex items-start justify-items-start relative m-5">
+    <div className="w-auto min-w-[310px] h-fit flex justify-end relative">
       <p className="font-[Alumni_Sans] w-auto font-bold italic text-right text-[#9b90d0]/[0.63] leading-[150px]">
         <span className='h-fit text-[170px] sm:text-[185px]/[185px]'>{time[0]}</span><span className='text-[40px]'>{time[1]}</span>
       </p>
-      <p className="title-1 w-[216px] h-fit absolute left-0 top-[30%] text-6xl text-left text-[#fff1f7]">
+      <p className="title-1 w-[216px] h-fit absolute -left-[8px] top-[30%] text-6xl text-left text-[#fff1f7]">
       <svg
         width={41}
         height={40}
@@ -37,9 +36,9 @@ const Title = (props: Props) => {
             width={42}
             height={42}
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity={0} result="BackgroundImageFix" />
+            <feFlood floodOpacity={0} result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"

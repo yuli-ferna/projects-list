@@ -7,13 +7,10 @@
   font-style: normal;
   font-display: swap; /* Optional: improves font loading performance */
 }
-@import "tailwindcss";
-@theme {
-  --font-3d: "3DIsometric";
-}
 html {
   font-family: "VT323", monospace;
   color: #21242a;
+  /* @apply text-[#21242a]; */
   font-weight: 400;
   font-style: normal;
   --s: 140px; /* control the size*/
@@ -28,18 +25,30 @@ html {
    radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
    var(--c2); */
   /* background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667); */
-  
+/*   
   background: url("../../public/background.svg"),#f2b8c3;
-  background-size: cover;
+  background-size: cover; */
+}
+@import "tailwindcss";
+
+@theme {
+  --font-3d: "3DIsometric";
 }
 .retro-shadow {
   box-shadow: 4px 4px 0px 0 #21242a;
 }
-.retro-button {
-  @apply flex justify-center items-center flex-grow-0 flex-shrink-0 h-[45px] relative gap-2.5 px-3 py-1.5 rounded-[20px] bg-[#fbc7e2] border-2 border-[#21242a]
+.retro-button:hover {
+  background-color: #FD64AC !important;
 }
+
 .title-1 {
   text-shadow: 1px 1px rgba(33, 36, 42, 0.7), -1px -1px rgba(33, 36, 42, 0.7);
+}
+
+.background-home {
+  background: url("../../public/background.svg"),#f2b8c3;
+  background-size: cover;
+  background-position: center;
 }
 /* body {
   background: #A4BDF5;

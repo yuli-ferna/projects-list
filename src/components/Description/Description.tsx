@@ -1,32 +1,32 @@
-import React from 'react'
+import { useTranslation } from 'react-i18next';
 
-type Props = {}
+const Description = () => {
+  const { t } = useTranslation();
 
-const Description = (props: Props) => {
   return (
-    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[325px] h-[67px] relative gap-[27px]">
-  <svg
-    width={59}
-    height={59}
-    viewBox="0 0 59 59"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="flex-grow-0 flex-shrink-0 w-[59px] h-[59px] relative"
-    preserveAspectRatio="xMidYMid meet"
-  >
-    <path
-      d="M56.1827 5.61416H53.3802V2.81166H50.5777V-0.00927734H11.2321V22.4845H2.80615V25.287H16.8555V22.4845H14.053V2.81166H44.9543V14.0401H56.1827V42.1388H53.3802V47.7623H56.1827V56.1882H59.0037V8.4351H56.1827V5.61416ZM14.053 56.1882H56.1827V58.9907H14.053V56.1882Z"
-      fill="#474164"
-    />
-    <path
-      d="M50.578 36.5155H53.3805V42.1389H50.578V36.5155ZM47.757 30.9105H50.578V36.5155H47.757V30.9105ZM19.6767 28.0895H47.757V30.9105H19.6767V28.0895ZM36.5286 14.0402H39.3311V16.8611H36.5286V14.0402ZM28.1027 19.6636H36.5286V22.4845H28.1027V19.6636ZM25.2817 14.0402H28.1027V16.8611H25.2817V14.0402ZM16.8558 25.287H19.6767V28.0895H16.8558V25.287ZM11.2323 50.5648H14.0533V56.1883H11.2323V50.5648ZM8.42984 44.9598H11.2323V50.5648H8.42984V44.9598ZM5.62734 39.3364H8.42984V44.9598H5.62734V39.3364ZM2.80641 33.713H5.62734V39.3364H2.80641V33.713ZM0.00390625 25.287H2.80641V33.713H0.00390625V25.287Z"
-      fill="#474164"
-    />
-  </svg>
-  <p className="flex-grow-0 flex-shrink-0 w-[232px] text-[29px] text-left text-[#21242a]">
-    Desciption of the projects / Demos
-  </p>
-</div>
+    <div className="flex justify-center items-center relative gap-[27px]">
+      <svg
+        width={59}
+        height={59}
+        viewBox="0 0 59 59"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-[59px] h-[59px] relative"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <path
+          d="M56.1827 5.61416H53.3802V2.81166H50.5777V-0.00927734H11.2321V22.4845H2.80615V25.287H16.8555V22.4845H14.053V2.81166H44.9543V14.0401H56.1827V42.1388H53.3802V47.7623H56.1827V56.1882H59.0037V8.4351H56.1827V5.61416ZM14.053 56.1882H56.1827V58.9907H14.053V56.1882Z"
+          fill="#474164"
+        />
+        <path
+          d="M50.578 36.5155H53.3805V42.1389H50.578V36.5155ZM47.757 30.9105H50.578V36.5155H47.757V30.9105ZM19.6767 28.0895H47.757V30.9105H19.6767V28.0895ZM36.5286 14.0402H39.3311V16.8611H36.5286V14.0402ZM28.1027 19.6636H36.5286V22.4845H28.1027V19.6636ZM25.2817 14.0402H28.1027V16.8611H25.2817V14.0402ZM16.8558 25.287H19.6767V28.0895H16.8558V25.287ZM11.2323 50.5648H14.0533V56.1883H11.2323V50.5648ZM8.42984 44.9598H11.2323V50.5648H8.42984V44.9598ZM5.62734 39.3364H8.42984V44.9598H5.62734V39.3364ZM2.80641 33.713H5.62734V39.3364H2.80641V33.713ZM0.00390625 25.287H2.80641V33.713H0.00390625V25.287Z"
+          fill="#474164"
+        />
+      </svg>
+      <p className="w-[240px] sm:w-full min-w-[232px] max-w-[500px] text-xl sm:text-2xl text-left text-[#21242a]">
+        {t("projects.description")}
+      </p>
+    </div>
   )
 }
 
