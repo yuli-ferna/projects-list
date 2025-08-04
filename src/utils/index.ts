@@ -29,6 +29,7 @@ export const themes: theme[] = [
   {
     color: { buttons: "#C1B8ED", number: "#fbc7e2", bar: "#C1B8ED" },
     icons: { first: "./icons/arcade.svg", second: "./icons/heart.svg" }
-    
   }
 ]
+
+export const loadingDuration = 2;

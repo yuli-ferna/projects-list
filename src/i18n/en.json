@@ -3,6 +3,7 @@
     "title": "Projects & Demos",
     "by": "by yuli-ferna",
     "hi": "Hi I’m yuli-ferna, a software developer",
+    "portfolio": "https://yuli-ferna.vercel.app/",
     "contactMe": "Contact me! :)",
     "changeLang": "Wanna change language?",
     "loading": "Loading",
@@ -44,6 +45,33 @@
           "link": "https://yuli-ferna.github.io/load-basis/"
       }
     ]
+  },
+  "contact" : {
+    "title": "Contact me!",
+    "form": "Contact Form",
+    "myLinks": "My contact links",
+    "description": "Interested in collaborating or learning more about my work? I’m open to new opportunities and professional connections. Let’s talk!",
+    "email": "Email",
+    "name": "Name",
+    "message": "Message",
+    "send": "Send",
+    "links": {
+      "github": {
+        "name": "GitHub",
+        "icon": "github.svg",
+        "link": "https://github.com/yuli-ferna"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "icon": "linkedin.svg",
+        "link": "https://www.linkedin.com/in/yuliana-fern%C3%A1ndez-950057126/"
+      },
+      "gmail": {
+        "name": "Gmail",
+        "icon": "gmail.svg",
+        "link": "https://mail.google.com/mail/u/0/?fs=1&to=yuliferna123@gmail.com&su=Hey+Yuli!&tf=cm"
+      }
+    }
   },
   "underConstruction": {
     "title": "UNDER CONSTRUCTION",

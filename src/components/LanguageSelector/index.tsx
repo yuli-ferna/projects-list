@@ -26,10 +26,10 @@ const LanguageSelector = () => {
 
   return (<>
     <div
-      className="hidden lg:flex justify-center items-center relative gap-2.5 p-2.5 rounded-tl-xl rounded-tr-xl rounded-bl-[10px] rounded-br-xl bg-[#fef7c3] border border-[#21242a] w-15 h-15 cursor-pointer justify-self-end m-5 retro-shadow"
+      className="hidden lg:flex justify-center items-center relative gap-2.5 p-2.5 rounded-tl-xl rounded-tr-xl rounded-bl-[10px] rounded-br-xl bg-[#fef7c3] border border-[#21242a] w-12 h-12 cursor-pointer justify-self-end m-5 retro-shadow"
       onClick={handleChange}
     >
-      <p className="text-4xl text-left text-[#21242a]">{currentLanguage}</p>
+      <p className="text-3xl text-left text-[#21242a]">{currentLanguage}</p>
     </div> 
       <span
         className='lg:hidden'

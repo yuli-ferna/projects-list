@@ -1,8 +1,9 @@
 {
   "projects": {
     "title": "Proyectos y Demos",
-    "by": "por yuli-ferna",
+    "by": "de yuli-ferna",
     "hi": "Hola, soy yuli-ferna, desarrolladora de software",
+    "portfolio": "https://yuli-ferna.vercel.app/",
     "contactMe": "¡Contáctame! :)",
     "changeLang": "¿Quieres cambiar de idioma?",
     "loading": "Cargando",
@@ -65,6 +66,33 @@
         "link": "https://yuli-ferna.github.io/load-model"
       }
     ]
+  },
+  "contact" : {
+    "title": "Contáctame!",
+    "form": "Formulario de Contacto",
+    "myLinks": "Links de contacto",
+    "description": "Si deseas ponerte en contacto conmigo, estaré encantada de saber de ti. Ya sea para colaborar, conversar o explorar nuevas oportunidades, este es el espacio para conectar.",
+    "email": "Email",
+    "name": "Nombre",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "links": {
+      "github": {
+        "name": "GitHub",
+        "icon": "github.svg",
+        "link": "https://github.com/yuli-ferna"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "icon": "linkedin.svg",
+        "link": "https://www.linkedin.com/in/yuliana-fern%C3%A1ndez-950057126/"
+      },
+      "gmail": {
+        "name": "Gmail",
+        "icon": "gmail.svg",
+        "link": "https://mail.google.com/mail/u/0/?fs=1&to=yuliferna123@gmail.com&su=Hey+Yuli!&tf=cm"
+      }
+    }
   },
   "underConstruction": {
     "title": "EN CONSTRUCCIÓN",

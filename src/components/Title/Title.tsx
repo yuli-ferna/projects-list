@@ -1,4 +1,5 @@
 import { useDate } from 'hook/useDate';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
 
@@ -6,13 +7,13 @@ interface Props {
 
 const Title = (props: Props) => {
   const { time } = useDate();
-
+  const { t } = useTranslation()
   return (
-    <div className="w-auto min-w-[310px] h-fit flex justify-end relative">
-      <p className="font-[Alumni_Sans] w-auto font-bold italic text-right text-[#9b90d0]/[0.63] leading-[150px]">
+    <div className="w-auto min-w-[310px] lg:min-w-fit h-fit lg:m-15 flex justify-end relative">
+      <p className="font-[Alumni_Sans] w-auto font-bold italic text-right text-[#9b90d0]/[0.63] leading-[150px] lg:hidden">
         <span className='h-fit text-[170px] sm:text-[185px]/[185px]'>{time[0]}</span><span className='text-[40px]'>{time[1]}</span>
       </p>
-      <p className="title-1 w-[216px] h-fit absolute -left-[8px] top-[30%] text-6xl text-left text-[#fff1f7]">
+      <p className="title-1 w-[216px] absolute -left-[8px] top-[30%] lg:static text-[#fff1f7] h-fit text-6xl text-left text-[#fff1f7]">
       <svg
         width={41}
         height={40}
@@ -53,9 +54,11 @@ const Title = (props: Props) => {
           </filter>
         </defs>
       </svg>
-        <span className="w-[216px] h-fit text-6xl text-left text-[#fff1f7]">Projects</span>
+        <span>Projects</span>
         <br />
-        <span className="w-[216px] h-fit text-6xl text-left text-[#fff1f7]">&amp; Demos</span>
+        <span>&amp; Demos</span>
+        <br />
+        <span className='hidden lg:block text-4xl'>{t("projects.by")}</span>
       </p>
       
     </div>
