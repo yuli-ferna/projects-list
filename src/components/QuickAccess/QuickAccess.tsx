@@ -15,10 +15,10 @@ const QuickAccess = ({ icon, name, href }: Props) => {
               Link Share 2 Streamline Icon: https://streamlinehq.com
             </desc>
             <g id="link-share-2--create-hyperlink-link-make-unlink-square">
-              <path id="Vector 1313" fill="#ffffff" d="M2 5h17v17H2V5Z" stroke-width="1.5"></path>
-              <path id="Vector 1312" stroke="#1e1e3e" d="M12 5H2v17h17V12" stroke-width="1.5"></path>
-              <path id="Vector 1309" stroke="#1e1e3e" d="M10 14 22 2" stroke-width="1.5"></path>
-              <path id="Vector 1310" stroke="#1e1e3e" d="M14 2h8v8" stroke-width="1.5"></path>
+              <path id="Vector 1313" fill="#ffffff" d="M2 5h17v17H2V5Z" strokeWidth="1.5"></path>
+              <path id="Vector 1312" stroke="#1e1e3e" d="M12 5H2v17h17V12" strokeWidth="1.5"></path>
+              <path id="Vector 1309" stroke="#1e1e3e" d="M10 14 22 2" strokeWidth="1.5"></path>
+              <path id="Vector 1310" stroke="#1e1e3e" d="M14 2h8v8" strokeWidth="1.5"></path>
             </g>
           </svg>
         </div>

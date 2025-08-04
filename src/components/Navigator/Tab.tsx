@@ -16,8 +16,8 @@ const Tab = ({selected = false, text, icon}: Props) => {
       preserveAspectRatio="none"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0 8.5H8L8 0.5C8 4.91716 4.41859 8.49818 0 8.5Z"
         fill="#6E3230"
       />
@@ -41,7 +41,7 @@ const Tab = ({selected = false, text, icon}: Props) => {
           className=""
           preserveAspectRatio="none"
         >
-          <g clip-path="url(#clip0_108_543)">
+          <g clipPath="url(#clip0_108_543)">
             <path
               d="M4.70696 4.49999L7.85351 1.35379C8.04883 1.15847 8.04883 0.841795 7.85351 0.64649C7.65819 0.45117 7.34151 0.45117 7.14621 0.64649L3.99999 3.79302L0.85379 0.64649C0.65847 0.45117 0.341795 0.45117 0.14649 0.64649C-0.0488144 0.841811 -0.0488301 1.15849 0.14649 1.35379L3.29302 4.49999L0.14649 7.64621C-0.0488301 7.84153 -0.0488301 8.15821 0.14649 8.35351C0.341811 8.54881 0.658485 8.54883 0.85379 8.35351L3.99999 5.20696L7.14619 8.35351C7.34151 8.54883 7.65819 8.54883 7.85349 8.35351C8.04881 8.15819 8.04881 7.84151 7.85349 7.64621L4.70696 4.49999Z"
               fill="white"
@@ -65,8 +65,8 @@ const Tab = ({selected = false, text, icon}: Props) => {
       preserveAspectRatio="none"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M8 8.5H0L0 0.5C0 4.91716 3.58141 8.49818 8 8.5Z"
         fill="#6E3230"
       />

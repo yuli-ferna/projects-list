@@ -87,7 +87,7 @@ function App() {
   const constraintsRef = useRef<HTMLDivElement>(null)
 
   const projects = t("projects.list", { returnObjects: true }) as any[];
-  console.log("projects", projects)
+
   useEffect(() => {
     Draggable.create(".navigator", {
       type: "x,y",
@@ -132,7 +132,7 @@ function App() {
         <Separator />
 
         <motion.div
-          className='flex flex-row flex-wrap gap-10 mt-10 justify-center'>
+          className='flex flex-row flex-wrap gap-10 justify-center'>
           {projects.map((project, index) => <ProjectItemMobile key={index} project={project} index={index} />)}
         </motion.div>
       </motion.div>

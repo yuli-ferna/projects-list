@@ -3,7 +3,7 @@ import Description from "components/Description/Description"
 import { LanguageSelector } from "components/LanguageSelector";
 import ProjectContent from "components/ProjectContent/ProjectContent";
 import Separator from "components/Separator/Separator";
-import { loadingDuration, project } from "utils"
+import { loadingDuration, project, themes } from "utils"
 import Tab from "./Tab";
 import SearchBar from "./SearchBar";
 import Loading from "components/Loading/Loading";
@@ -18,10 +18,10 @@ const Navigator = ({ projects }: Props) => {
       {/* Tabs */}
       <div className="flex flex-col justify-start items-start self-stretch rounded-tl-[5px] rounded-tr-[5px] bg-[#fab8ba] border border-[#6d2b2f] border-b-0">
         <div className="flex justify-between items-end w-full h-[44.5px] px-2.5">
-          <div className="flex w-[929.33px] h-9">
+          <div className="flex w-full min-w-[600px] h-9">
             <Tab text="Notion" icon="./icon-notion.svg" />
             <Tab text="My Projects & Demos" icon="./icon-page.svg" selected />
-            <Tab text="Notion" icon="./icon-notion.svg" />
+            {/* <Tab text="Notion" icon="./icon-notion.svg" /> */}
           </div>
           <div className="flex justify-start items-center self-stretch gap-2.5">
             <svg
@@ -137,11 +137,16 @@ const Navigator = ({ projects }: Props) => {
             className='flex flex-row flex-wrap gap-10 mt-10 justify-center items-center max-w-100'
           >
             {projects.map((project, index) => {
-              return <div key={`navigator-${index}`} >
+              const themeId = index % themes.length;
+              const theme = themes[themeId];
+              return <div key={`navigator-${index}`} className='relative' >
                 <Separator />
                 <div className="flex flex-col gap-8">
-                  <ProjectContent project={project} index={index} />
+                  <ProjectContent project={project} index={index} colorButton={theme.color.buttons} colorNumber={theme.color.number} />
                 </div>
+
+                <img height={"auto"} className='w-12 absolute -right-10 top-[20%] rotate-25' src={theme.icons.first} alt="icon" />
+                <img height={"auto"} className='w-12 absolute -left-[70px] bottom-4 -rotate-25' src={theme.icons.second} alt="icon" />
               </div>
             })}
           </motion.div>
