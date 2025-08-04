@@ -133,7 +133,7 @@ const Navigator = ({ projects }: Props) => {
         >
           <Description />
 
-          <motion.div
+         {projects.length > 0 && <motion.div
             className='flex flex-row flex-wrap gap-10 mt-10 justify-center items-center max-w-100'
           >
             {projects.map((project, index) => {
@@ -149,7 +149,7 @@ const Navigator = ({ projects }: Props) => {
                 <img height={"auto"} className='w-12 absolute -left-[70px] bottom-4 -rotate-25' src={theme.icons.second} alt="icon" />
               </div>
             })}
-          </motion.div>
+          </motion.div>}
         </motion.div>
       </div>
     </div>

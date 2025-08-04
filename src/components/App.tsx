@@ -131,10 +131,10 @@ function App() {
         <Description />
         <Separator />
 
-        <motion.div
+        {projects.length > 0 && <motion.div
           className='flex flex-row flex-wrap gap-10 justify-center'>
           {projects.map((project, index) => <ProjectItemMobile key={index} project={project} index={index} />)}
-        </motion.div>
+        </motion.div>}
       </motion.div>
       <NavbarMobile />
       {/* <UnderConstruction /> */}

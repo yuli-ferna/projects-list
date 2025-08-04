@@ -7,9 +7,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vitejs.dev/config https://vitest.dev/config
 export default defineConfig({
   base: './',
-  build: {
-    outDir: '../'
-  },
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   test: {
     globals: true,

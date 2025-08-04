@@ -12,7 +12,7 @@ i18next
     resourcesToBackend(async(language: string, namespace: string) => {
       // no reason there is a language called 'dev', just passed it away
       // if (language === 'dev') return
-      return import(`./${language}.json`)
+      return import(`../locales/${language}.json`)
       const data = (await fetch(`https://raw.githubusercontent.com/yuli-ferna/portfolio-assets/refs/heads/main/locale/${language}.json`)).json()
       
       return data;
