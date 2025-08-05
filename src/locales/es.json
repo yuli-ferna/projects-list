@@ -1,6 +1,7 @@
 {
   "projects": {
     "title": "Proyectos y Demos",
+    "project": "Proyectos",
     "by": "de yuli-ferna",
     "hi": "Hola, soy yuli-ferna, desarrolladora de software",
     "portfolio": "https://yuli-ferna.vercel.app/",
@@ -24,7 +25,6 @@
           "Diseño Web"
         ],
         "github": "https://github.com/yuli-ferna/portfolio",
-        "figma": "https://www.figma.com/design/NRJ5hIyx7k9RH7IA9R7PU2/Portfolio?node-id=63-1876&t=Wg9WK0q4wDVjFE3q-1",
         "link": "https://yuli-ferna.vercel.app/"
       },
       {
@@ -93,6 +93,13 @@
         "link": "https://mail.google.com/mail/u/0/?fs=1&to=yuliferna123@gmail.com&su=Hey+Yuli!&tf=cm"
       }
     }
+  },
+ "footer": {
+    "builtWith": "Construido con",
+    "styledWith": "Estilizado con",
+    "iconsFrom": "Íconos de",
+    "licensedUnder": "licenciado bajo",
+    "allRightsReserved": "Todos los derechos reservados"
   },
   "underConstruction": {
     "title": "EN CONSTRUCCIÓN",

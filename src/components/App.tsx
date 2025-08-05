@@ -18,6 +18,7 @@ import { useEffect, useRef } from 'react';
 import Menu from './Menu/Menu';
 import QuickAccess from './QuickAccess/QuickAccess';
 import { loadingDuration } from "utils";
+import Footer from "./Footer/Footer";
 gsap.registerPlugin(Draggable);
 
 const flower = <svg className='absolute -top-[30px] right-[224px] z-2' width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,7 +136,12 @@ function App() {
           className='flex flex-row flex-wrap gap-10 justify-center'>
           {projects.map((project, index) => <ProjectItemMobile key={index} project={project} index={index} />)}
         </motion.div>}
+        <Separator />
+        <div className='flex flex-col items-center'>
+          <Footer />
+        </div>
       </motion.div>
+
       <NavbarMobile />
       {/* <UnderConstruction /> */}
     </div>

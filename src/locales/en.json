@@ -1,6 +1,7 @@
 {
   "projects": {
     "title": "Projects & Demos",
+    "project": "Project",
     "by": "by yuli-ferna",
     "hi": "Hi I’m yuli-ferna, a software developer",
     "portfolio": "https://yuli-ferna.vercel.app/",
@@ -16,7 +17,6 @@
         "image": "projects/portfolio.webp",
         "tags": ["Astro", "React", "Javascript", "HTML", "CSS", "TailwindCSS", "Framer Motion", "Web Design"],
         "github": "https://github.com/yuli-ferna/portfolio",
-        "figma": "https://www.figma.com/design/NRJ5hIyx7k9RH7IA9R7PU2/Portfolio?node-id=63-1876&t=Wg9WK0q4wDVjFE3q-1",
         "link": "https://yuli-ferna.vercel.app/"
       },
       {
@@ -72,6 +72,13 @@
         "link": "https://mail.google.com/mail/u/0/?fs=1&to=yuliferna123@gmail.com&su=Hey+Yuli!&tf=cm"
       }
     }
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "styledWith": "Styled with",
+    "iconsFrom": "Icons from",
+    "licensedUnder": "licensed under",
+    "allRightsReserved": "All rights reserved"
   },
   "underConstruction": {
     "title": "UNDER CONSTRUCTION",

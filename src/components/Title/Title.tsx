@@ -13,7 +13,7 @@ const Title = (props: Props) => {
       <p className="font-[Alumni_Sans] w-auto font-bold italic text-right text-[#9b90d0]/[0.63] leading-[150px] lg:hidden">
         <span className='h-fit text-[170px] sm:text-[185px]/[185px]'>{time[0]}</span><span className='text-[40px]'>{time[1]}</span>
       </p>
-      <p className="title-1 w-[216px] absolute -left-[8px] top-[30%] lg:static text-[#fff1f7] h-fit text-6xl text-left text-[#fff1f7]">
+      <p className="title-1 w-[216px] absolute -left-[8px] top-[30%] lg:static text-[#fff1f7] h-fit text-6xl text-left">
       <svg
         width={41}
         height={40}
@@ -54,7 +54,7 @@ const Title = (props: Props) => {
           </filter>
         </defs>
       </svg>
-        <span>Projects</span>
+        <span>{t("projects.project")}</span>
         <br />
         <span>&amp; Demos</span>
         <br />
