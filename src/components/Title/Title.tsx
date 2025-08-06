@@ -9,7 +9,7 @@ const Title = (props: Props) => {
   const { time } = useDate();
   const { t } = useTranslation()
   return (
-    <div className="w-auto min-w-[310px] lg:min-w-fit h-fit lg:m-15 flex justify-end relative">
+    <div className="w-auto min-w-[310px] lg:min-w-fit h-fit lg:m-5 flex justify-end relative">
       <p className="font-[Alumni_Sans] w-auto font-bold italic text-right text-[#9b90d0]/[0.63] leading-[150px] lg:hidden">
         <span className='h-fit text-[170px] sm:text-[185px]/[185px]'>{time[0]}</span><span className='text-[40px]'>{time[1]}</span>
       </p>

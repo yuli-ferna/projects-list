@@ -103,7 +103,6 @@ function App() {
     <div className='background-home fixed top-0 w-screen h-screen' />
     {/* Mobile */}
     <div className="flex flex-col gap-5 px-2 pb-20 justify-center items-center relative lg:hidden">
-      {/* {t("underConstruction.project")} */}
       <MobileBar />
       <Title />
       <div className="flex flex-col gap-y-4 w-full max-w-[350px] relative w-max-[360px]">
@@ -148,16 +147,20 @@ function App() {
     {/* Desktop */}
     <div ref={constraintsRef} className='hidden lg:block relative w-full h-screen'>
       <div className='flex justify-around items-start pt-[7px]'>
-        <div className='flex flex-col justify-center items-center'>
-          <Title />
-          <div className='flex flex-row flex-wrap justify-center max-w-[200px] gap-10'>
+        <div className='flex flex-col justify-center items-center relative'>
+          <div className="absolute top-[20px] left-[20px]"><Title /></div>
+          
+          <div className='flex flex-row flex-wrap justify-center max-w-[200px] gap-10 mt-[300px]'>
             <QuickAccess name='Portfolio' icon='./icons/book.svg' href={t("projects.portfolio")} />
             <QuickAccess name='Portfolio' icon='./icons/arcade.svg' href={t("projects.portfolio")} />
             <QuickAccess name='Portfolio' icon='./icons/gift.svg' href={t("projects.portfolio")} />
             <QuickAccess name='Portfolio' icon='./icons/file.svg' href={t("projects.portfolio")} />
           </div>
         </div>
-        <Navigator projects={projects} />
+        <div className="w-[70%] mt-[15px]">
+          <Navigator projects={projects} />
+        </div>
+
         <div className='absolute bottom-0 w-full'>
           <Menu />
         </div>

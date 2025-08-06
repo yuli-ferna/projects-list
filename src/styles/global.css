@@ -12,8 +12,8 @@ html {
   color: #21242a;
   font-weight: 400;
   font-style: normal;
-  cursor: url('../../public/cursor.svg'), auto;
-
+  /* cursor: url('../../public/cursor.svg') 4 4, auto;
+  cursor: -webkit-image-set(url('../../public/cursor.svg') 2x) 4 4, auto;  */
 
 }
 @import "tailwindcss";

@@ -59,7 +59,7 @@ const Mail = ({ width = 54, height = 54, color = "#474164" }: Props) => {
         </g>
         <defs>
           <clipPath id="clip0_77_281">
-            <rect width={width} height={height} fill="white" />
+            <rect width={54} height={54} fill="white" />
           </clipPath>
         </defs>
       </svg>

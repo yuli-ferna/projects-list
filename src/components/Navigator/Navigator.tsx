@@ -14,7 +14,7 @@ interface Props {
 
 const Navigator = ({ projects }: Props) => {
   return (
-    <div className="navigator flex flex-col justify-start items-center h-[800px] w-[1080px] relative">
+    <div className="navigator flex flex-col justify-start items-center h-[780px] relative">
       {/* Tabs */}
       <div className="flex flex-col justify-start items-start self-stretch rounded-tl-[5px] rounded-tr-[5px] bg-[#fab8ba] border border-[#6d2b2f] border-b-0">
         <div className="flex justify-between items-end w-full h-[44.5px] px-2.5">
