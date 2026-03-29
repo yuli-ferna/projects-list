@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+      - run: npm run build
+
+      - name: Deploy to yuli-ferna.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # Personal Access Token con permisos de repo
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          external_repository: yuli-ferna/yuli-ferna.github.io
+          publish_branch: main
+          publish_dir: ./dist
