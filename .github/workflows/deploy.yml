@@ -25,3 +25,4 @@ jobs:
           external_repository: yuli-ferna/yuli-ferna.github.io
           publish_branch: main
           publish_dir: ./dist
+          keep_files: true
